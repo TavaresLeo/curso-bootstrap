@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HDC Agency - a sua agência web</title>
+    <title>HDC Agency - Portfólio full stack</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -309,6 +309,64 @@
                 </div>
             </div>
 
+
+            <!-- Cadastro de clientes -->
+            <section id="client-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3 class="main-title">Cadastro inteligente de clientes</h3>
+                            <p class="section-subtitle">Receba leads direto no sistema com persistência em banco de dados e resposta rápida.</p>
+                        </div>
+                        <div class="col-lg-6" id="client-form-column">
+                            <form id="client-form" novalidate>
+                                <div class="mb-3">
+                                    <label for="client-name" class="form-label">Nome completo</label>
+                                    <input id="client-name" name="name" type="text" class="form-control" minlength="3" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="client-email" class="form-label">E-mail</label>
+                                    <input id="client-email" name="email" type="email" class="form-control" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="client-company" class="form-label">Empresa</label>
+                                    <input id="client-company" name="company" type="text" class="form-control" required>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="client-service" class="form-label">Serviço desejado</label>
+                                        <select id="client-service" name="service" class="form-select" required>
+                                            <option value="">Selecione...</option>
+                                            <option value="Desenvolvimento Web">Desenvolvimento Web</option>
+                                            <option value="E-commerce">E-commerce</option>
+                                            <option value="SEO">SEO</option>
+                                            <option value="Design UX/UI">Design UX/UI</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="client-budget" class="form-label">Orçamento estimado (R$)</label>
+                                        <input id="client-budget" name="budget" type="number" min="0" step="0.01" class="form-control" placeholder="10000">
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="client-message" class="form-label">Descrição do projeto</label>
+                                    <textarea id="client-message" name="message" rows="4" class="form-control" placeholder="Conte o contexto do projeto"></textarea>
+                                </div>
+                                <button type="submit" class="main-btn" id="client-submit">Cadastrar cliente</button>
+                                <p id="client-feedback" class="mt-3 mb-0" aria-live="polite"></p>
+                            </form>
+                        </div>
+                        <div class="col-lg-6" id="client-list-column">
+                            <div class="recent-clients-panel">
+                                <h4>Últimos clientes cadastrados</h4>
+                                <p class="text-muted">Atualizado em tempo real após cada envio.</p>
+                                <ul id="client-list" class="list-group list-group-flush"></ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <!-- Footer -->
 
             <footer>
@@ -331,16 +389,8 @@
                                 <i class="fas fa-map-marker-alt"></i>
                                 <p><span class="contact-title">Venha tomar um café:</span> Rua Lorem Ipsum - 1518</p>
                             </div>
-                            <div class="col-md-6" id="msg-box">
-
-                            </div>
-                            <div class="col-md-6" id="contact-form">
-                                <form action="">
-                                    <input type="email" class="form-control" placeholder="E-mail" name="email">
-                                    <input type="text" class="form-control" placeholder="Assunto" name="subject">
-                                    <textarea class="form-control" rows="3" placeholder="Sua mensagem..." name="message"></textarea>
-                                    <input type="submit" class="main-btn" value="Enviar">
-                                </form>
+                            <div class="col-md-12" id="msg-box">
+                                <p class="text-center mt-4">Nossa equipe responde em até 1 hora útil. Para propostas, use o cadastro de clientes acima.</p>
                             </div>
                         </div>
                     </div>
