@@ -1,0 +1,22 @@
+{
+  "name": "curso-bootstrap-portfolio",
+  "version": "1.0.0",
+  "description": "Portfólio com cadastro de clientes e API em Node.js + SQLite",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "node --test"
+  },
+  "keywords": [
+    "portfolio",
+    "express",
+    "sqlite"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2",
+    "sqlite3": "^5.1.7"
+  }
+}
